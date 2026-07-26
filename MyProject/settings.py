@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-fl5=l*nc)!-rudj$i#-rnva81^u_7cg+)&a-n_gfj@vbtpw!sp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['food-mahal-restaurant.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost' 'food-mahal-restaurant.onrender.com']
 
 
 # Application definition
