@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block childpage %}
+
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          About <b class="text-color1"> Me</b>
+  </div>
+ </div>
+<!-- end heading-->
+
+ <div class="row social">
+    <div class="col-sm-10 mx-auto shadow-lg p-4">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{% static 'images/4.jpg'%}" class="img-thumbnail"/>
+            </div>
+            <div class="col-sm-8 text-justify">
+                <p class="fs-3 fw-bold">Pankaj Kumar Yadav</p>
+                <hr class="w-25"/>
+                <b>Software Engineer (5yr. of Experience)</b>
+                 <b class="fs-4">Skill</b><br/>
+                <b class="badge bg-color1">HTML</b>
+                <b class="badge bg-color1">CSS</b>
+                <b class="badge bg-color1">BOOTSTRAP</b>
+                <b class="badge bg-color1">C PROGRAMMING</b>
+                <b class="badge bg-color1">JAVASCRIPT</b>
+                <b class="badge bg-color1">DATABASE</b>
+                <b class="badge bg-color1">PYTHON PROGRAMMING</b>
+                <b class="badge bg-color1">DJANGO</b>
+                <hr/>
+                       <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.youtube.com/techpilelko" target="_blank">
+              <i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/pankaj-yadav-051708392/">
+                <i class="fa-brands fa-linkedin"></i></a>
+                <i class="fa-brands fa-whatsapp"></i>
+                 <i class="fa-brands fa-instagram"></i>
+
+            
+            </div>
+        </div>
+    </div>
+ </div>
+
+{% endblock %}

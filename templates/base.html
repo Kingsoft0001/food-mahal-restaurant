@@ -1,0 +1,319 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techpile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      .heading
+      {
+        background: url("{% static 'images/about/page-title.jpg'%}");
+        background-size:100% 70%;
+        background-attachment: fixed;
+      }
+      .bg-color1
+      {
+        background: #ffbe00;
+      }
+      .text-color1
+      {
+        color: #e38e2d;
+      }
+      .bg-color2
+      {
+        background-color:#d5d374;
+      }
+      .text-color2
+      {
+        color:#5c1d89;
+      }
+      .social .fa-brands
+      {
+        color:#e43636;
+        background:#f3c2ca;
+        height:30px;
+        width:30px;
+        text-align: center;
+        line-height:30px;
+        font-size:18px;
+        border-radius: 2px;
+      }
+      .social .fa-brands:hover
+      {
+        background: #ffbe00;
+        color:white;
+        transition:1s;
+        transform: rotate(360deg);
+      }
+      #menu
+      {
+        background: transparent !important;
+      
+
+      }
+      #menu ul li a:hover
+      {
+        color:#ffbe00;
+      }
+      .form-control
+      {
+        height:45px;
+        border-radius:3px !important;
+        margin-bottom:2%;
+      }
+      .txta
+      {
+        height:100px;
+        resize:none;
+      }
+      .btn1
+      {
+        height:45px;
+        width:140px;
+        background:#ffbe00;
+        color:white;
+        border:none;
+        border-radius:3px;
+        line-height:45px;
+        text-decoration: none;
+
+      }
+      .services .fa-solid
+      {
+        color:#ffbe00;
+        font-size: 21px;
+
+      }
+      .contact .fa-solid
+      {
+        height:50px;
+        width:50px;
+        border-radius:5px;
+        color:#ffbe00;
+        background:#ffedf0;
+        text-align: center;
+        line-height: 50px;
+      }
+
+
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row text-center bg-dark text-light py-1">
+        <div class="col-sm-3">
+          <i class="fa-solid fa-phone"></i>
+          +91-9120310904
+        </div>
+        <div class="col-sm-3">
+          <i class="fa-solid fa-envelope"></i>
+          pankajking67@gmail.com
+        </div>
+        <div class="col-sm-3">
+          An ISO Certified Company
+        </div>
+        <div class="col-sm-3">
+          <a href="/user/contact/" class="badge bg-color1 rounded-pill text-decoration-none text-dark">Contact Us</a>
+          <a href="/admin/" class="badge bg-color1 rounded-pill text-decoration-none text-dark">Login</a>
+        </div>
+      </div>
+           <!-- Start header -->
+             <div class="row text-center shadow-lg bg-light sticky-top">
+              <div class="col-sm-3 fs-2 py-3">
+                Food <b class="text-color1">
+                  Mahal
+                  <i class="fa-solid fa-utensils"></i>
+                </b>
+              </div>
+              <div class="col-sm-6 pt-2">
+                <!-- Start menu -->
+                 <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/index/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/about/">About Us</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="/user/menu/">Menu</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="/user/booking/">Book Table</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="/user/offers/">Offers</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/user/gallery/">Gallery</a>
+        </li>   
+           <li class="nav-item">
+          <a class="nav-link" href="/user/contact/">Contact Us</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="/user/team/">Chefs</a>
+        </li>
+
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+                 <!-- End menu -->
+              </div>
+              <div class="col-sm-3 social py-3">
+                <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.youtube.com/techpilelko" target="_blank">
+              <i class="fa-brands fa-youtube"></i></a>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                 <i class="fa-brands fa-instagram"></i>
+              </div>
+             </div>
+           <!-- End header -->
+
+           {% block childpage %}
+
+
+           {% endblock %}
+
+
+           <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h4>📍 Contact Food Mahal</h4>
+                <p><strong>Phone:</strong><br>+91-9120310904</p>
+
+                <p><strong>Email:</strong><br>info@foodmahal@gmail.com</p>
+
+                <p><strong>Address:</strong><br>
+                azamgarh,uttar pradesh</p>
+
+                <p><strong>Opening Hours</strong><br>
+                Monday-Sunday<br>
+                10:00 AM - 10:00 PM</p>
+            </div>
+
+            <!-- Specialities -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h4>🍽 Our Specialities</h4>
+                <ul class="list-unstyled">
+                    <li>North Indian</li>
+                    <li>Chinese</li>
+                    <li>Pizza</li>
+                    <li>Burger</li>
+                    <li>South Indian</li>
+                    <li>Desserts</li>
+                </ul>
+            </div>
+
+            <!-- Why Choose -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h4>⭐ Why Choose Us?</h4>
+                <ul class="list-unstyled">
+                    <li>Fresh Food</li>
+                    <li>Experienced Chefs</li>
+                    <li>Premium Dining</li>
+                    <li>Fast Service</li>
+                    <li>Online Booking</li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+           <div class="col-lg-3 col-md-6 mb-4">
+                <h4>🔗 Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="/about" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="/menu" class="text-white text-decoration-none">Menu</a></li>
+                    <li><a href="/gallery" class="text-white text-decoration-none">Gallery</a></li>
+                    <li><a href="/contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="bg-light">
+
+        <div class="d-flex justify-content-between flex-wrap">
+            <p>© 2026 Food Mahal. All Rights Reserved.</p>
+            <p>Designed & Developed By <b>Pankaj Kumar Yadav</b></p>
+        </div>
+
+    </div>
+</footer>
+
+             
+
+<!-- CTA -->
+<div class="row py-5 bg-color1">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <b>Ready to Enjoy an Amazing Meal?</b>
+        <p>From freshly prepared fusion dishes to exceptional service, every
+           visit is crafted to delight your senses.</p>
+      </div>
+      <div class="col-sm-2 pt-3"> 
+        <a href="tel:+917007237006" class="btn1 d-block text-center text-dark" style="background:white !important;">
+          <i class="fa-solid fa-phone"></i> Call Now</a>
+      </div>
+      <div class="col-sm-2 pt-3">
+        <a href="/user/booking" class="btn1 d-block text-center text-dark" style="background:white !important;">
+          <i class="fa-solid fa-chair"></i> Book Table</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CTA end -->
+
+
+
+          <!-- footer1 -->
+            <div class="row py-5 text-light bg-dark" style="min-height:300px;">
+                <div class="col-sm-3 p-3"></div>
+                <div class="col-sm-3 p-3"></div>
+                <div class="col-sm-3 p-3"></div>
+                <div class="col-sm-3 p-3"></div>
+            </div>
+          <!-- end footer1 --> 
+
+          <!-- footer2 -->
+            <div class="row mt-1 bg-dark text-center py-2 text-light">
+              <div class="col-sm-6">
+               <b class="text-color1">Copywrite &copy; :</b>
+               <a href="https://www.techpile.in" class="text-decoration-none text-light" target="_blank">
+                Techpile Technology Privated Limited
+            </a>
+              </div>
+              <div class="col-sm-6">
+               <b class="text-color1">Designed & Developed By :</b> 
+               <a href="/user/developer/" class="text-decoration-none text-light">
+                Er Pankaj Kumar Yadav
+               </a>
+               
+              </div>
+            </div>
+          <!-- end footer2 -->
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

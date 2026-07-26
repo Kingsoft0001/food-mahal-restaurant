@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          Our<b class="text-color1"> Team</b>
+  </div>
+ </div>
+<!-- end heading-->
+ <div class="row">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+
+              {% for x in tdata %}
+               <!--team box start-->
+              <div class="col-sm-3 social bg-light p-2">
+                <br class="bg-white shadow-lg p-3">
+                    <img src="/{{x.picture}}" class="img-thumbnail"/><br/>
+                    <b>{{x.name}}</b><br/>
+                    {{x.about_chef}}<br/>
+                   <i class="fa-brands fa-facebook"></i>
+                   <i class="fa-brands fa-youtube"></i>
+                   <i class="fa-brands fa-linkedin"></i>
+                   <i class="fa-brands fa-whatsapp"></i>
+                   <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+              <!-- team box end-->
+              {% endfor %}
+            </div>
+          </div>
+          </div>
+          <!-- end team -->
+{% endblock %}

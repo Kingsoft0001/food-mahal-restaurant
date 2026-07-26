@@ -1,0 +1,52 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          Top <b class="text-color1"> Offers Items</b>
+  </div>
+ </div>
+<!-- end heading-->
+
+
+<!-- top offers items-->
+ <div class="row py-5">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+       <div class="fs-3">Our <b class="text-color1"> Discounted Items</b>
+      <hr class="w-50"/>
+    </div>
+    </div>
+    
+    <div class="row">
+      {% for x in products %}
+    <!-- offer box-->
+     <div class="col-sm-4">
+     <div class="card position-relative">
+      <b class="badge bg-success text-light rounded-1 position-absolute top-0 
+          start-50 translate-middle">
+            <i class="fa-solid fa-inr"></i>
+          Discount:   {{x.discounted_price}} /-</b>
+      <img src="/{{x.picture}}" class="card-img-top"/>
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold">{{x.name}}</p>
+        <p>
+         <span> {{x.description}}</span><br/>
+         <b class="badge bg-color1 text-dark"><i class="fa-solid fa-inr"></i>
+           Price :</b> 
+         <b class="text-danger">{{x.price}}/-</b> 
+        </p>
+      </div>
+     </div>
+     </div>
+    <!-- offer box end -->
+     {% endfor %}
+    </div>
+  </div>
+ </div>
+<!-- top offers items end -->
+
+ 
+
+{% endblock %}

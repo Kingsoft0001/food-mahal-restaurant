@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          Book <b class="text-color1"> Table Now</b>
+  </div>
+ </div>
+<!-- end heading-->
+
+ <!-- Why Choose -->
+  <div class="row py-5 bg-color1">
+    <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="fs-3">Why Choose <b class="text-light">Food Mahal?</b></div>
+      <hr class="w-50"/>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- booking form-->
+             <b class="badge bg-success">{{msg}}</b><br/>
+              <form method="post">
+                    {% csrf_token %}
+                      <input type="text" value="Per Person Price : 25/-" readonly required class="form-control"/>
+                      <input type="number" onblur="demo()" id="t" placeholder="Enter No of People" name="nop" required class="form-control"/>
+                      <input type="number" id="t1" placeholder="Total Amount" readonly name="amount" required class="form-control"/>
+                      <input type="text" placeholder="Name" name="name" required class="form-control"/>
+                      <input type="number" name="mobile" placeholder="Mobile No" required class="form-control"/>
+                      <input type="email" name="email" placeholder="Email" required class="form-control"/>
+                      <input type="date" name="date"  required class="form-control"/>
+                      <input type="time" name="time"  required class="form-control"/>
+                      <textarea placeholder="Message" name="msg" required class="form-control txta"></textarea>
+                      <textarea placeholder="Address" name="address" required class="form-control txta"></textarea>
+                      <input type="submit" value="Book Now" class="btn btn-dark bg-color1 rounded-1"/>
+                    </form>
+
+            <!-- booking form end-->
+        </div>
+      <div class="col-sm-6">
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍃	Fresh </b>Ingredients	We use fresh, high-quality ingredients to ensure every dish is full of natural flavor and goodness.</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>👨‍🍳	Expert Chefs</b>	Our experienced chefs combine traditional techniques with modern creativity to craft exceptional fusion dishes.</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍽️	Unique Fusion</b> Recipes	Enjoy a perfect blend of local and international flavors, thoughtfully prepared to delight every palate.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🛡️	Hygiene & Safety</b>	We follow strict food safety and hygiene standards to provide a clean and safe dining experience.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>⚡	Fast & Friendly Service</b>	Our dedicated team ensures your meals are prepared and served promptly with a warm smile.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded">
+          <b>💰	Great Value	Experience</b> premium taste and generous portions at prices that offer excellent value for money.
+
+        </p>
+    
+      </div>
+      
+    </div>
+    </div>
+  </div>
+
+ <!-- Why Choose end -->
+
+
+<!-- booking -->
+<div class="row">
+    <div class="col-sm-10 mx-auto">
+        <div class="row py-5">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4">
+
+              
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking end -->
+ <script>
+    function demo()
+    {
+        var nop=document.getElementById("t").value
+        amount=parseInt(nop)*25
+        document.getElementById("t1").value=amount
+    }
+ </script>
+
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          About <b class="text-color1"> Us</b>
+  </div>
+ </div>
+<!-- end heading-->
+
+<!-- Intro Section -->
+ <div class="row py-5 bg-color2">
+  <div class="col-sm-10 mx-auto pt-5">
+    <div class="row">
+    <div class="col-sm-5 position-relative">
+      <img class="position-absolute top-0 start-50 translate-middle" 
+      src="{% static 'images/home-one/restant2.png'%}" height="150px"/>
+      <img class="position-absolute top-50 start-0 translate-middle" 
+      src="{% static 'images/home-one/restant3.png'%}" height="150px"/>
+      <img class="position-absolute top-50 start-100 translate-middle"
+       src="{% static 'images/home-one/restant4.png'%}" height="150px"/>
+      <img class="position-absolute top-100 start-50 translate-middle" 
+      src="{% static 'images/home-one/restant5.png'%}" height="150px"/>
+      <img src="{% static 'images/home-one/restant.png'%}" class="img-fluid"/>
+    </div>
+    <div class="col-sm-7" style="text-align: justify;">
+      <p class="fs-4">About <b class="text-color1">Our Restaurant</b></p>
+      <hr class="w-50"/>
+      <p>
+        Welcome to Food Fusion Restaurant, where every meal is crafted to bring people together through unforgettable flavors and exceptional hospitality. We believe that great food is more than just nourishment—it's an experience that creates memories, celebrates culture, and connects people. Our restaurant combines traditional recipes with modern culinary techniques to deliver a unique fusion of taste, freshness, and creativity.
+      </p>
+      <p>
+        At Food Fusion Restaurant, we carefully select premium-quality ingredients to ensure every dish is prepared with the highest standards of freshness and flavor. From delicious appetizers and handcrafted main courses to refreshing beverages and irresistible desserts, our menu offers something for every palate. Whether you're craving authentic local favorites or exciting international fusion dishes, our chefs are dedicated to creating meals that exceed your expectations.
+      </p>
+      <p>
+         vegetables, premium spices, quality meats, and carefully sourced ingredients. Every plate reflects our commitment to quality, presentation, and customer satisfaction.
+      </p>
+    </div>
+    </div>
+  </div>
+ </div>
+<!-- Intro Section end -->
+ 
+<!-- CTA -->
+<div class="row py-5 bg-dark text-light">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <b>Ready to Enjoy an Amazing Meal?</b>
+        <p>From freshly prepared fusion dishes to exceptional service, every
+           visit is crafted to delight your senses.</p>
+      </div>
+      <div class="col-sm-2 pt-3"> 
+        <a href="tel:+917007237006" class="btn1 d-block text-center text-dark">
+          <i class="fa-solid fa-phone"></i> Call Now</a>
+      </div>
+      <div class="col-sm-2 pt-3">
+        <a href="/user/booking" class="btn1 d-block text-center text-dark">
+          <i class="fa-solid fa-chair"></i> Book Table</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CTA end -->
+
+ <!-- Why Choose -->
+  <div class="row py-5 bg-color1">
+    <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="fs-3">Why Choose <b class="text-light">Food Mahal?</b></div>
+      <hr class="w-50"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍃	Fresh </b>Ingredients	We use fresh, high-quality ingredients to ensure every dish is full of natural flavor and goodness.</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>👨‍🍳	Expert Chefs</b>	Our experienced chefs combine traditional techniques with modern creativity to craft exceptional fusion dishes.</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍽️	Unique Fusion</b> Recipes	Enjoy a perfect blend of local and international flavors, thoughtfully prepared to delight every palate.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🛡️	Hygiene & Safety</b>	We follow strict food safety and hygiene standards to provide a clean and safe dining experience.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>⚡	Fast & Friendly Service</b>	Our dedicated team ensures your meals are prepared and served promptly with a warm smile.
+</p>
+        <p class="bg-color2 p-2 shadow-lg rounded">
+          <b>💰	Great Value	Experience</b> premium taste and generous portions at prices that offer excellent value for money.
+
+        </p>
+    
+      </div>
+      <div class="col-sm-6">
+        <img src="{% static 'images/home-one/banner/banner-slider2.png'%}" 
+        class="img-fluid fa-spin"/>
+      </div>
+    </div>
+    </div>
+  </div>
+
+ <!-- Why Choose end -->
+
+ <!-- box -->
+<div class="row py-5 bg-color2">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>5K</span>
+        </b> 	<br/>Happy Customers Served
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>100+</span>
+        </b> 	<br/>	Expert Chefs
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-star"></i> 
+          <span>4.9</span>
+        </b> 	<br/>	Customer Rating
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>200+</span>
+        </b> 	<br/>Fusion Dishes
+      </div>
+      <!-- section end -->
+       
+    </div>
+  </div>
+</div>
+<!-- box end -->
+
+
+
+
+{% endblock %}
