@@ -34,6 +34,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost', 'food-mahal-restaurant.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://food-mahal-restaurant.onrender.com",
+]
+
 
 # Application definition
 
